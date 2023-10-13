@@ -1,0 +1,54 @@
+.container-fluid{
+    width: 100%;
+    height: 1390px;
+    background-image: url(./carousel-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    width: 55%;
+    height: 1390px;
+    background-color:rgb(212, 208, 208);
+    display: flex;
+    margin-left: 350px;
+}
+.fname,.heading{
+    width: 100%;
+    height: 25px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.dep,.gender,.no,.email,.hobbies,.lang,.lname{
+    width: 100%;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+.password{
+    width: 100%;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+.sports{
+    width: 100%;
+    height: 40px;
+    margin-left: 70px;
+}
+.button{
+    width: 50%;
+    height: 40px;
+    margin-top: 110px;
+    margin-left: 220px;
+    background-color:steelblue;
+}
+input{
+    border: 2px solid;
+}
+#fname,#lname,#password,#dep,#mail,#mno{
+    border: 2px solid;
+    width:350px;
+}
+#pass1{
+    color: blue;
+}
