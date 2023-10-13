@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter no:</label><br><br>
+    <input type="number" name="starting" id="num1"><br><br>
+    <input type="button" value="submit" onclick="a()">
+   <script>
+    function a(){
+        var x=parseInt(document.getElementById("num1").value);
+        document.write("ascending order","<br>");
+        for(i=1;i<=x;i++){
+            document.write(i,"<br>");
+        }
+        document.write("decending order","<br>");
+        for(i=x;i>=1;i--){
+            document.write(i,"<br>");
+        }
+    }
+   </script>
+</body>
+</html>
