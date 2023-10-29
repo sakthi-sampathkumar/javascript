@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para reverse</title>
+</head>
+<body>
+    <h2>reverse method</h2>
+    <p id="x"></p>
+    <script>
+        var a="long ago there lived a lion";
+        // var b=a.split(" ");
+        // var c=b.reverse().join(" ");
+        var b=[...a].reverse().join("");
+        document.getElementById('x').innerHTML=b;
+    </script>
+</body>
+</html>

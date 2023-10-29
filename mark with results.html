@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Tamil</label>
+    <input type="text" name="tamil" id="tam"><br><br>
+    <label>English</label>
+    <input type="text" name="english" id="eng"><br><br>
+    <label>Maths</label>
+    <input type="text" name="maths" id="mat"><br><br>
+    <input type="button" value="submit" onclick="a()">
+    <script>
+    function a()
+    {
+       var x=parseInt(document.getElementById("tam").value);
+       var y=parseInt(document.getElementById("eng").value);
+       var z=parseInt(document.getElementById("mat").value);
+       var tot,avg;
+        tot=x+y+z;
+        document.write("The Total value is"+" "+tot+"<br>");
+        avg=(x+y+z)/3;
+        document.write("The Average value is"+" "+avg+"<br>");
+        if(avg>90){
+            document.write("A grade");
+        }
+        else if(avg>80){
+            document.write("B grade");
+        }
+        else if(avg>70){
+            document.write("C grade");
+        }
+        else if(avg>60){
+            document.write("D grade");
+        }
+        else if(avg<60){
+            document.write("Study well");
+        }
+    }
+    </script>
+</body>
+</html>

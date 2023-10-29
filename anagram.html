@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First Word: <input type="text" id="fword"><br><br>
+    Second Word: <input type="text" id="sword"><br><br>
+    <button onclick="myfunction ()">Submit</button>
+    <script>
+        function myfunction () {
+        let a=document.getElementById("fword").value;
+        let b=document.getElementById("sword").value;
+        let x=a.split('').sort().join('');
+        let y=b.split('').sort().join('');
+       
+        if (a.length !== b.length) {
+            document.write("Invalid Input");
+            return;
+        }
+        else if (x == y) {
+            document.write("Given word are Anagram");
+        }
+        else {
+            document.write("Given word are not Anagram");
+        }
+    
+        }
+    </script>
+</body>
+</html>

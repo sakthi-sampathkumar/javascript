@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Voter age</h2>
+    <label>Age:</label>
+    <input type="text" name="age" id="age"><br><br>
+    <input type="button" value="submit" onclick="a()">
+    <script>
+        function a(){
+        var x=document.getElementById("age").value;
+        if(x>17){
+            document.write("valid");
+        }
+        else{
+            document.write("not valid");
+        }
+    }
+    </script>
+</body>
+</html>

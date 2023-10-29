@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>find center value</h2>
+    <p id="x"></p>
+    <script>
+        var a=["a","a","b","c","d","c","b","e","e"];
+        a.sort();
+        var b=[...new Set(a)];
+        var c=b.length;
+        var d=c/2;
+        var e=Math.floor(d);
+        document.getElementById('x').innerHTML=b[e];
+    </script>
+</body>
+</html>

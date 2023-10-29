@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stars</title>
+</head>
+<body>
+    <label>enter the number:</label>
+    <input type="number" name="number" id="num"><br><br>
+    <button onclick="a()">submit</button>
+    <script>
+        function a(){
+            var x=parseInt(document.getElementById("num").value);
+                for(i=1;i<=x;i++) { 
+                for(j=1;j<=i;j++){
+                    document.write("*");
+                }
+                document.write("<br>")
+            }
+        } 
+ </script>
+</body>
+</html>

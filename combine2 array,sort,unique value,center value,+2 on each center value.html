@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>combine two arrays</h2>
+    <p id="z"></p>
+    <script>
+        const x=["a","b","c","d","b","c",];
+        const y=["ee","ff","gg","hh","ff"];
+        var a=x.concat(y);
+        // document.getElementById('z').innerHTML=a;
+        a.sort();
+        var b=[...new Set(a)];
+        // document.getElementById('z').innerHTML=b;
+        var c=b.length;
+        var d=c/2;
+        var e=Math.floor(d);
+        document.getElementById('z').innerHTML=b[e];
+    </script>
+</body>
+</html>
